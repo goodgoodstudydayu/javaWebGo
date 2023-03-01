@@ -2,10 +2,7 @@ package jdbc;
 
 import pojo.Account;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class JDBC查询 {
@@ -39,5 +36,12 @@ public class JDBC查询 {
         System.out.println(lis);
         statement.close();
         connection.close();
+
+
+//        PreparedStatement好处
+//        1.获取PreparedStatement时将sql发送给mysql预编译sql，性能高
+//        2.防止sql注入：将敏感字符转义
+//        java传入mysql执行步骤：1.检查sql语法 2.编译sql 3.执行sql
+//        相同SQL检查编译只执行一次，使用PreparedStatement
     }
 }
