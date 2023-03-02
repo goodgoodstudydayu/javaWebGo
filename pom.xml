@@ -7,6 +7,10 @@
     <groupId>groupId</groupId>
     <artifactId>javaWebGo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>tomcatWeb</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>mysql</groupId>
