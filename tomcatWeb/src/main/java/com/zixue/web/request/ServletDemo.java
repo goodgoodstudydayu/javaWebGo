@@ -1,4 +1,4 @@
-package com.zixue.web;
+package com.zixue.web.request;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
